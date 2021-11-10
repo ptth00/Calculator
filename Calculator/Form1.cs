@@ -16,9 +16,14 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btCong_Click(object sender, EventArgs e)
         {
-
+            int a, b, Ketqua;
+            a = int.Parse(txta.Text);
+            b = int.Parse(txtb.Text);
+            Ketqua = a + b;
+            txtKetQua.Text = Ketqua.ToString();
         }
+
     }
 }

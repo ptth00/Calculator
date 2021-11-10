@@ -44,7 +44,7 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(680, 456);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(138, 42);
             this.button1.TabIndex = 0;
@@ -65,7 +65,7 @@
             // txta
             // 
             this.txta.Location = new System.Drawing.Point(123, 73);
-            this.txta.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.txta.Margin = new System.Windows.Forms.Padding(6);
             this.txta.Name = "txta";
             this.txta.Size = new System.Drawing.Size(180, 29);
             this.txta.TabIndex = 2;
@@ -89,6 +89,7 @@
             this.btCong.TabIndex = 4;
             this.btCong.Text = "+";
             this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
             // 
             // label3
             // 
@@ -144,10 +145,9 @@
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Tính Toán";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
